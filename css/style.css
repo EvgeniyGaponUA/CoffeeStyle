@@ -139,7 +139,7 @@ body {
     transition: 0.5s;
 }
 
-.card__image:hover img  {
+.card:hover .card__image img  {
     transform: scale(1.2);
 }
 
@@ -151,8 +151,7 @@ body {
     transition: 0.5s;
 }
 
-.card__image:hover + .card__title, 
-.card__title:hover {
+.card:hover .card__title {
     letter-spacing: 1px;
     color: var(--text-braun)
 }
@@ -172,6 +171,7 @@ body {
     color: rgba(29, 31, 46, 0.4);
     text-decoration-line: line-through;  
 }
+
 /* --Cart end------------------------------------------------------------------------------------------------ */
 
 /* --basic end------------------------------------------------------------------------------------------------ */
@@ -447,8 +447,6 @@ body {
     text-align: center;
 }
 
-
-
 /* --main section featured end--------------------------------------------------------------------------------- */
 
 /* --main section products start-------------------------------------------------------------------------------- */
@@ -486,7 +484,9 @@ body {
     margin: 0 0 0 0;
 }
 
-.magazine__container {
+/* .magazine__container {} */
+
+.magazine__box {
     margin: 0 0 130px 0;
 }
 
@@ -839,7 +839,7 @@ body {
         margin: 0 0 50px 0;
     }
 
-    .magazine {
+    .magazine__inner {
         margin: 0 0 65px 0;
     }
 
@@ -981,9 +981,3 @@ body {
     }
 
 }
-
-
-
-
-
-
